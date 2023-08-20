@@ -14,21 +14,21 @@ body * {
 }
 
 #container {
-    margin: 5% auto 0;
     width: 360px;
-    height: 712px;
-    display: block;
+    margin: 56px auto 0;
+    padding: 24px;
 }
 
 #profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 7%;
+    padding: 24px 0;
 }
 
 #profile img {
     width: 25%;
+    margin-bottom: 8px;
 }
 
 #profile p {
@@ -39,10 +39,14 @@ body * {
 
 ul#links {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
 }
 
 ul#links li {
-   
+
 }
 
 ul#links li a {
@@ -56,4 +60,21 @@ ul#links li a {
     border-radius: 8px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+ul#links li a:hover {
+    background: var(--highlight-color-dark-mode, rgba(255, 255, 255, 0.05));
+    border: 1.5px solid white;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0;
+    font-size: 24px;
 }
